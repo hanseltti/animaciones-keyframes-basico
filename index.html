@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animación de Texto</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.texto-animado {
+  font-size: 3rem;
+  color: #333;
+  animation: moverTexto 2s infinite;
+}
+
+@keyframes moverTexto {
+  0% {
+    transform: translateX(0);
+    color: #333;
+  }
+
+  50% {
+    transform: translateX(100px);
+    color: #ff5722;
+  }
+
+  100% {
+    transform: translateX(0);
+    color: #333;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <h1 class="texto-animado">¡Hola Mundo!</h1>
+</body>
+</html>
